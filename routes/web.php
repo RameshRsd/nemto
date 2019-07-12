@@ -94,8 +94,6 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::get('official-travel-partners', 'TravelDeskController@official_travel_partners');
     //* ============================ Travel Desk Controller ==================*//
 
-
-
 });
 
 
@@ -111,11 +109,11 @@ Route::group(['namespace'=>'backend'],function(){
     /* ================================================ Admin CONTROL Start============================================================== */
 
 
-    /* ================================================ Admin CONTROL Start============================================================== */
+    /* ================================================ Guest CONTROL Start============================================================== */
     Route::group(['middleware'=>'visitor','prefix'=>'guest','namespace'=>'Guest'],function(){
         Route::get('','GuestController@index');
     });
-    /* ================================================ Admin CONTROL Start============================================================== */
+    /* ================================================ Guest CONTROL Start============================================================== */
 
 
 });
