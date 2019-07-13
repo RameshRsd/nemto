@@ -62,8 +62,38 @@
                                         <td>{{$exhibition->mobile}}</td>
                                         <td>{{$exhibition->email}}</td>
                                         <td>
+                                            <div class="btn-group">
+                                                @if($exhibition->status=='active')
+                                                    <small class="btn btn-success btn-xs">Approved</small>
+                                                @else
+                                                    <small class="btn btn-warning btn-xs">Pending</small>
+                                                @endif
+
+                                                <button type="button" class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu payment-status" role="menu">
+                                                    @if($exhibition->status=='active')
+                                                        <li>
+                                                            <form action="{{url('admin/exhibitions/update_status').'/'.$exhibition->id}}" method="post">
+                                                                {{csrf_field()}}
+                                                                <input type="hidden" name="status" value="inactive">
+                                                                <button type="submit" class="btn btn-danger btn-xs">Reject</button>
+                                                            </form>
+                                                        </li>
+                                                    @else
+                                                        <li>
+                                                            <form action="{{url('admin/exhibitions/update_status').'/'.$exhibition->id}}" method="post">
+                                                                {{csrf_field()}}
+                                                                <input type="hidden" name="status" value="active">
+                                                                <button type="submit" class="btn btn-success btn-xs">Approve</button>
+                                                            </form>
+                                                        </li>
+                                                        @endif
+                                                </ul>
+                                            </div>
                                             <a href="#" class="btn btn-primary btn-xs fa fa-eye"></a>
-                                            <a href="#" class="btn btn-danger btn-xs fa fa-trash"></a>
                                         </td>
                                     </tr>
                                     @endforeach

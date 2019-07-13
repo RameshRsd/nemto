@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\frontend;
 
+use App\Model\AbstractSubmission;
+use App\Model\BusinessMeeting;
 use App\Model\Country;
 use App\Model\Delegate;
 use App\Model\Diplomatic;
@@ -50,7 +52,7 @@ class RegistrationController extends Controller
         $exhibitor->email = $request->email;
         $exhibitor->email2 = $request->email2;
         $exhibitor->website = $request->website;
-        $exhibitor->status = 'active';
+        $exhibitor->status = 'inactive';
         $exhibitor->save();
         return redirect()->back()->with('success','Thank you for Registration !!');
     }
@@ -89,7 +91,7 @@ class RegistrationController extends Controller
         $delegate->email = $request->email;
         $delegate->email2 = $request->email2;
         $delegate->website = $request->website;
-        $delegate->status = 'active';
+        $delegate->status = 'inactive';
         $delegate->save();
         return redirect()->back()->with('success','Thank you for Registration !!');
     }
@@ -149,17 +151,15 @@ class RegistrationController extends Controller
         $foreign_delegate->email = $request->email;
         $foreign_delegate->website = $request->website;
         $foreign_delegate->details = $request->details;
-        $foreign_delegate->status = 'active';
+        $foreign_delegate->status = 'inactive';
         $foreign_delegate->save();
         return redirect()->back()->with('success','Thank you for Registration !!');
     }
 
     public function get_diplomatic_registration(){
         $title = 'Diplomatic Official Registration - Nepal Medical Tourism Organization (A non-profitable organization)';
-        $recommendeds = Recommended::all();
-        $occupations = Occupation::all();
         $countries = Country::orderBy('name')->get();
-        return view('frontend.pages.registration.diplomatic_registration',compact('title','recommendeds','occupations','countries'));
+        return view('frontend.pages.registration.diplomatic_registration',compact('title','countries'));
     }
     public function post_diplomatic_registration(Request $request){
         $this->validate($request, [
@@ -190,9 +190,97 @@ class RegistrationController extends Controller
         $diplomatic->email = $request->email;
         $diplomatic->email2 = $request->email2;
         $diplomatic->website = $request->website;
-        $diplomatic->status = 'active';
+        $diplomatic->status = 'inactive';
         $diplomatic->save();
         return redirect()->back()->with('success','Thank you for Registration !!');
     }
 
+    public function get_abstract_submission(){
+        $title = 'Abstract Submission - Nepal Medical Tourism Organization (A non-profitable organization)';
+        $countries = Country::orderBy('name')->get();
+        return view('frontend.pages.registration.abstract_submission',compact('title','countries'));
+    }
+    public function post_abstract_submission(Request $request){
+        $this->validate($request, [
+            'name'=> 'required',
+            'company_name'=> 'required',
+            'title'=> 'required',
+            'presentation_title'=> 'required',
+            'email'=> 'required',
+            'address1'=> 'required',
+            'abstract_info'=> 'required',
+            'objective'=> 'required',
+            'method_value'=> 'required',
+            'result'=> 'required',
+            'conclusion'=> 'required',
+            'question1'=> 'required',
+            'question2'=> 'required',
+            'mobile'=> 'required|numeric',
+        ]);
+        $abstract = new AbstractSubmission();
+        $abstract->title = $request->title;
+        $abstract->name = $request->name;
+        $abstract->company_name = $request->company_name;
+        $abstract->presentation_title = $request->presentation_title;
+        $abstract->email = $request->email;
+        $abstract->mobile = $request->mobile;
+        $abstract->address1 = $request->address1;
+        $abstract->abstract_info = $request->abstract_info;
+        $abstract->objective = $request->objective;
+        $abstract->method = $request->method_value;
+        $abstract->result = $request->result;
+        $abstract->conclusion = $request->conclusion;
+        $abstract->question1 = $request->question1;
+        $abstract->question2 = $request->question2;
+        $abstract->nature = $request->nature;
+        $abstract->status = 'inactive';
+        if ($request->hasFile('file')){
+            $filename = time().'.'.request()->file('file')->getClientOriginalExtension();
+            $filename = md5(microtime()) . '.' . $filename;
+            request()->file('file')->move('public/uploads/files/',$filename);
+            $abstract->file =$filename;
+        }
+        if ($request->hasFile('photo')){
+            $filename = time().'.'.request()->file('photo')->getClientOriginalExtension();
+
+            $filename = md5(microtime()) . '.' . $filename;
+
+            request()->file('photo')->move('public/uploads/photos/',$filename);
+            $abstract->photo =$filename;
+        }
+        $abstract->save();
+        return redirect()->back()->with('success','Thank you for Substract Submission !!');
+    }
+
+    public function get_b2b_meetings(){
+        $title = 'B2B Meetings - Nepal Medical Tourism Organization (A non-profitable organization)';
+        return view('frontend.pages.registration.b2b_meetings',compact('title'));
+    }
+    public function post_b2b_meetings(Request $request){
+        $this->validate($request, [
+            'name'=> 'required',
+            'company_name'=> 'required',
+            'email'=> 'required',
+            'website'=> 'required',
+            'designation'=> 'required',
+            'address'=> 'required',
+            'details'=> 'required',
+            'prefer_com'=> 'required',
+            'mobile'=> 'required|numeric',
+        ]);
+        $business = new BusinessMeeting();
+        $business->name = $request->name;
+        $business->company_name = $request->company_name;
+        $business->website = $request->website;
+        $business->designation = $request->designation;
+        $business->tel = $request->tel;
+        $business->mobile = $request->mobile;
+        $business->address = $request->address;
+        $business->details = $request->details;
+        $business->email = $request->email;
+        $business->prefer_com = $request->prefer_com;
+        $business->status = 'inactive';
+        $business->save();
+        return redirect()->back()->with('success','Thank you for Submit Details !!');
+    }
 }

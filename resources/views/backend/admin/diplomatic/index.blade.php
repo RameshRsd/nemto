@@ -63,7 +63,6 @@
                                         <td>{{$diplomatic->email}}</td>
                                         <td>
                                             <a href="#" class="btn btn-primary btn-xs fa fa-eye"></a>
-                                            <a href="#" class="btn btn-danger btn-xs fa fa-trash"></a>
                                         </td>
                                     </tr>
                                     @endforeach

@@ -37,7 +37,7 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">Delegates Registration Details</h3>
+                            <h3 class="box-title">B2B Request Details</h3>
                             {{--<h3 class="box-title pull-right"><a href="{{url('admin/create-events')}}" class="btn btn-primary btn-xs">Create New Event</a></h3>--}}
                         </div>
                         <!-- /.box-header -->
@@ -54,13 +54,13 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($delegates as $key=>$delegate)
+                                @foreach($b2bmeetings as $key=>$bmeeting)
                                     <tr>
                                         <td>{{++$key}}</td>
-                                        <td>{{$delegate->f_name}} {{$delegate->l_name}}</td>
-                                        <td>{{$delegate->district->name}}, {{$delegate->district->state->name}}, {{$delegate->district->state->country->name}}</td>
-                                        <td>{{$delegate->mobile}}</td>
-                                        <td>{{$delegate->email}}</td>
+                                        <td>{{$bmeeting->name}}</td>
+                                        <td>{{$bmeeting->address}}</td>
+                                        <td>{{$bmeeting->mobile}}</td>
+                                        <td>{{$bmeeting->email}}</td>
                                         <td>
                                             <a href="#" class="btn btn-primary btn-xs fa fa-eye"></a>
                                         </td>

@@ -54,13 +54,13 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($delegates as $key=>$delegate)
+                                @foreach($abstracts as $key=>$abstract)
                                     <tr>
                                         <td>{{++$key}}</td>
-                                        <td>{{$delegate->f_name}} {{$delegate->l_name}}</td>
-                                        <td>{{$delegate->district->name}}, {{$delegate->district->state->name}}, {{$delegate->district->state->country->name}}</td>
-                                        <td>{{$delegate->mobile}}</td>
-                                        <td>{{$delegate->email}}</td>
+                                        <td>{{$abstract->name}}</td>
+                                        <td>{{$abstract->address1}}</td>
+                                        <td>{{$abstract->mobile}}</td>
+                                        <td>{{$abstract->email}}</td>
                                         <td>
                                             <a href="#" class="btn btn-primary btn-xs fa fa-eye"></a>
                                         </td>
