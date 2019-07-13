@@ -39,6 +39,10 @@ class ExhibitionController extends Controller
         $title = 'Stand And Packages';
         return view('frontend.pages.exhibition.stand_and_packages',compact('title'));
     }
+    public function sponsorship_opportunities(){
+        $title = 'Sponsorship Opportunities - NEMTO';
+        return view('frontend.pages.exhibition.sponsorship_opportunities',compact('title'));
+    }
     public function exhibitor_list_2018(){
         $title = 'Exhibitor List';
         return view('frontend.pages.exhibition.exhibitor_list_2018',compact('title'));

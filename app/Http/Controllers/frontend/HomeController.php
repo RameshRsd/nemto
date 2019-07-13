@@ -37,4 +37,12 @@ class HomeController extends Controller
     public function getRegister(){
         return view('auth.register');
     }
+
+
+    public function contact_us(){
+        $title = 'thank-you-sponsors-2018 - NEMTO';
+        return view('frontend.pages.contact_us',compact('title'));
+
+    }
+
 }

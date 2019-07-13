@@ -3,7 +3,7 @@
     <footer class="footer-area area-padding-top">
         <div class="container">
             <div class="row">
-                <div class="col single-footer-widget">
+                <div class="col-md-3 col-md-3-xs-12 single-footer-widget">
                     <h4>The Show</h4>
                     <ul>
                         <li><a href="{{url('about-event')}}">About The Event</a></li>
@@ -18,7 +18,7 @@
                         <li><a href="{{url('thank-you-sponsors-2018')}}">Thank You Sponsors 2018</a></li>
                     </ul>
                 </div>
-                <div class="col single-footer-widget">
+                <div class="col-md-3 single-footer-widget">
                     <h4>Exhibition</h4>
                     <ul>
                         <li><a href="{{url('exhibition')}}">Exhibition</a></li>
@@ -33,7 +33,7 @@
                         <li><a href="{{url('sponsorship-opportunities')}}">Sponsorship Opportunities</a></li>
                         <li><a href="{{url('exhibitor-list-2018')}}">Exhibitors List -NEMTO 2018</a></li>                    </ul>
                 </div>
-                <div class="col single-footer-widget">
+                <div class="col-md-3 single-footer-widget">
                     <h4>Visitors</h4>
                     <ul>
                         <li><a href="{{url('why-visit')}}">Why Visit?</a></li>
@@ -44,7 +44,7 @@
                         <li><a href="{{url('visa-invitation-letter')}}">Visa Invitation Letter</a></li>
                     </ul>
                 </div>
-                <div class="col single-footer-widget">
+                <div class="col-md-3 single-footer-widget">
                     <h4>Conference</h4>
                     <ul>
                         <li><a href="{{url('why-attend')}}">Why Attend?</a></li>
@@ -57,7 +57,7 @@
                         <li><a href="{{url('visa-invitation-letter')}}">Visa Invitation Letter</a></li>
                     </ul>
                 </div>
-                <div class="col single-footer-widget">
+                <div class="col-md-3 single-footer-widget">
                     <h4>Others Link</h4>
                     <ul>
                         <li><a href="{{url('agenda')}}">Agenda</a></li>
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="row footer-bottom d-flex justify-content-between">
-                <p class="col-lg-8 col-sm-12 footer-text m-0">
+                <p class="col-lg-8 col-md-3-sm-12 footer-text m-0">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Nepal Medical Tourism Organization | All rights reserved | Designed  by <a href="http://exploretech.com.np/" target="_blank">Explore Technologies</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
