@@ -74,10 +74,12 @@
     </section>
 
     <!--================ Feature section start =================-->
-    <section class="feature-section">
+    <section class="registration-section">
+        <div class="container-fluid">
+            <h2 class="Registration_h2">Registration Form</h2>
+        </div>
         <div class="container">
             <div class="row">
-
                 <div class="col-md-4">
                     <div class="card card-feature text-center text-lg-left" style="background: #dee2e6">
                         <h4 class="card-feature__title"><span class="card-feature__icon">
@@ -104,25 +106,20 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <!--================ Feature section start =================-->
-    <section class="feature-section" style="background-image: url('{{url('public/images/background/banner-2.jpg/')}}');">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card card-feature text-center text-lg-left" style="background: #06b6a9">
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/embassy.png')}}" alt=""></i>
-                        <h4 class="card-feature__title"><span class="card-feature__icon">
+                        <h4 class="card-feature__title_re"><span class="card-feature__icon">
                             </span>DIPLOMATIC OFFICIALS</h4>
                         <a href="#" class="registration_nemto">Registration</a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card card-feature text-center text-lg-left" style="background: #06b6a9">
+                    <div class="card card-feature text-center text-lg-left" style="background: #bb3131">
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/exhibition.png')}}" alt=""></i>
-                        <h4 class="card-feature__title"><span class="card-feature__icon">
+                        <h4 class="card-feature__title_re"><span class="card-feature__icon">
                             </span>B2B MEETINGS</h4>
                         <a href="#" class="registration_nemto">Registration</a>
                     </div>
@@ -130,7 +127,7 @@
                 <div class="col-md-4">
                     <div class="card card-feature nemto text-center text-lg-left" style="background: #be8404">
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/abstract.png')}}" alt=""></i>
-                        <h4 class="card-feature__title"><span class="card-feature__icon">
+                        <h4 class="card-feature__title_re"><span class="card-feature__icon">
                             </span>ABSTRACT SUBMISSION</h4>
                         <a href="#" class="registration_nemto">Registration</a>
                     </div>
@@ -138,7 +135,6 @@
             </div>
         </div>
     </section>
-    <!--================ Feature section end =================-->
     <!--================About  Area =================-->
     <section class="event_show-section">
         <div class="container-fluid">
@@ -156,7 +152,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card feature_events_img text-lg-left">
-                        <h3>Photo Gallery</h3>
+                        <h3 class="photo_gallery">Photo Gallery</h3>
                         <div class="photogallery_border">
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
@@ -199,12 +195,12 @@
     <!--================About Area End =================-->
     <!--================MEDICAL TOURISM ASIA SUMMIT FOCUS OBJECTIVES Area =================-->
     <section class="industries">
-        <div class="container">
+        <div class="container-fluid">
             <h2>MEDICAL TOURISM ASIA SUMMIT FOCUS INDUSTRIES</h2>
             <div class="row">
                 <div class="col">
                     <div class="card card-feature_industries asia_summit">
-                        <h5>HOSPITAL & HEALTHCARE</h5>
+                        <h3>HOSPITAL & HEALTHCARE</h3>
                         <p>
                             Meet top Nepalese hospitals
                             Meet internationally renowed doctors
@@ -214,7 +210,7 @@
                 </div>
                 <div class="col">
                     <div class="card card-feature_industries asia_summit">
-                        <h5>WELLNESS & FITNESS CENTERS</h5>
+                        <h3>WELLNESS & FITNESS CENTERS</h3>
                         <p>
                             Experience the world class Nepalese Traditional therapies
                             Blissful wellness centres of Nepal
@@ -223,7 +219,7 @@
                 </div>
                 <div class="col">
                     <div class="card card-feature_industries asia_summit">
-                        <h5>ACADEMIC INSTITUTIONS</h5>
+                        <h3>ACADEMIC INSTITUTIONS</h3>
                         <p>
                             Network with Nepalese Medical and Paramedical Colleges
                             Share the knowledge with academia specialists in healthcare sector of Nepal
@@ -232,7 +228,7 @@
                 </div>
                 <div class="col">
                     <div class="card card-feature_industries asia_summit">
-                        <h5>MEDICAL TECHNOLOGY</h5>
+                        <h3>MEDICAL TECHNOLOGY</h3>
                         <p>
                             Open to latest technology advancement in medical field
                             Meet for the technology partnership and investment
@@ -241,7 +237,7 @@
                 </div>
                 <div class="col">
                     <div class="card card-feature_industries asia_summit">
-                        <h5>HEALTH INSURANCE</h5>
+                        <h3>HEALTH INSURANCE</h3>
                         <p>
                             Initiate medical insurance and TPA companies for collaboration
                             Sign MOUs for partnership
@@ -253,10 +249,10 @@
     </section>
     <!--================MEDICAL TOURISM ASIA SUMMIT FOCUS OBJECTIVES Area END=================-->
     <!--================Sponsore Area  =================-->
-    <div class="container">
-        <h2 style="text-align: center">Proposed Sponsors Nepal</h2>
-    </div>
     <section class="sponsore_nemto" style="background: #0096ff">
+        <div class="container-fluid">
+            <h2 class="sponsor_h2">Proposed Sponsors</h2>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
