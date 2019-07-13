@@ -4,6 +4,7 @@ namespace App\Http\Controllers\frontend;
 
 use App\Model\Country;
 use App\Model\Delegate;
+use App\Model\Diplomatic;
 use App\Model\District;
 use App\Model\Exhibitor;
 use App\Model\ForeignDelegate;
@@ -71,25 +72,25 @@ class RegistrationController extends Controller
             'email'=> 'required|email',
             'mobile'=> 'required|numeric',
         ]);
-        $exhibitor = new Delegate();
-        $exhibitor->company_name = $request->company_name;
-        $exhibitor->title = $request->title;
-        $exhibitor->f_name = $request->f_name;
-        $exhibitor->l_name = $request->l_name;
-        $exhibitor->designation = $request->designation;
-        $exhibitor->address1 = $request->address1;
-        $exhibitor->address2 = $request->address2;
-        $exhibitor->country_id = $request->country_id;
-        $exhibitor->state_id = $request->state_id;
-        $exhibitor->district_id = $request->district_id;
-        $exhibitor->city = $request->city;
-        $exhibitor->tel = $request->tel;
-        $exhibitor->mobile = $request->mobile;
-        $exhibitor->email = $request->email;
-        $exhibitor->email2 = $request->email2;
-        $exhibitor->website = $request->website;
-        $exhibitor->status = 'active';
-        $exhibitor->save();
+        $delegate = new Delegate();
+        $delegate->company_name = $request->company_name;
+        $delegate->title = $request->title;
+        $delegate->f_name = $request->f_name;
+        $delegate->l_name = $request->l_name;
+        $delegate->designation = $request->designation;
+        $delegate->address1 = $request->address1;
+        $delegate->address2 = $request->address2;
+        $delegate->country_id = $request->country_id;
+        $delegate->state_id = $request->state_id;
+        $delegate->district_id = $request->district_id;
+        $delegate->city = $request->city;
+        $delegate->tel = $request->tel;
+        $delegate->mobile = $request->mobile;
+        $delegate->email = $request->email;
+        $delegate->email2 = $request->email2;
+        $delegate->website = $request->website;
+        $delegate->status = 'active';
+        $delegate->save();
         return redirect()->back()->with('success','Thank you for Registration !!');
     }
 
@@ -150,6 +151,47 @@ class RegistrationController extends Controller
         $foreign_delegate->details = $request->details;
         $foreign_delegate->status = 'active';
         $foreign_delegate->save();
+        return redirect()->back()->with('success','Thank you for Registration !!');
+    }
+
+    public function get_diplomatic_registration(){
+        $title = 'Diplomatic Official Registration - Nepal Medical Tourism Organization (A non-profitable organization)';
+        $recommendeds = Recommended::all();
+        $occupations = Occupation::all();
+        $countries = Country::orderBy('name')->get();
+        return view('frontend.pages.registration.diplomatic_registration',compact('title','recommendeds','occupations','countries'));
+    }
+    public function post_diplomatic_registration(Request $request){
+        $this->validate($request, [
+            'company_name'=> 'required',
+            'title'=> 'required',
+            'f_name'=> 'required',
+            'l_name'=> 'required',
+            'country_id'=> 'required',
+            'state_id'=> 'required',
+            'district_id'=> 'required',
+            'email'=> 'required|email',
+            'mobile'=> 'required|numeric',
+        ]);
+        $diplomatic = new Diplomatic();
+        $diplomatic->company_name = $request->company_name;
+        $diplomatic->title = $request->title;
+        $diplomatic->f_name = $request->f_name;
+        $diplomatic->l_name = $request->l_name;
+        $diplomatic->designation = $request->designation;
+        $diplomatic->address1 = $request->address1;
+        $diplomatic->address2 = $request->address2;
+        $diplomatic->country_id = $request->country_id;
+        $diplomatic->state_id = $request->state_id;
+        $diplomatic->district_id = $request->district_id;
+        $diplomatic->city = $request->city;
+        $diplomatic->tel = $request->tel;
+        $diplomatic->mobile = $request->mobile;
+        $diplomatic->email = $request->email;
+        $diplomatic->email2 = $request->email2;
+        $diplomatic->website = $request->website;
+        $diplomatic->status = 'active';
+        $diplomatic->save();
         return redirect()->back()->with('success','Thank you for Registration !!');
     }
 

@@ -14,12 +14,12 @@
                 <div class="pull-left info">
                     <p>{{\Illuminate\Support\Facades\Auth::user()->name}}</p>
                     <!-- Status -->
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    <a href="{{url('admin')}}"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
 
             <!-- search form (Optional) -->
-            <form action="#" method="get" class="sidebar-form">
+            <form action="{{url('admin')}}" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
@@ -78,6 +78,17 @@
                     </a>
                     <ul class="treeview-menu">
                         <li class=" @if(request()->segment('2') =='foreign-delegates') active @endif"><a href="{{url('admin/foreign-delegates')}}"><i class="fa fa-eye"></i> View Foreign Delegates</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview @if(request()->segment('2') =='diplomatic-official' || request()->segment('2') =='view-diplomatic-official') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Diplomatic Official</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='diplomatic-official') active @endif"><a href="{{url('admin/diplomatic-official')}}"><i class="fa fa-eye"></i> View Diplomatic Official</a></li>
                     </ul>
                 </li>
 

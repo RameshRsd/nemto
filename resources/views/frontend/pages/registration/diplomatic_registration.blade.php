@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contact-title">Exhibitor Registration</h2>
+                    <h2 class="contact-title">Diplomatic Official Registration</h2>
                     @if(session('success'))
                         <span class="btn btn-success btn-sm">Success</span> {{session('success')}}<br>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -33,12 +33,6 @@
                     <form class="form-contact contact_form" action="" method="post">
                         {{csrf_field()}}
                         <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Company Name <span class="red">*</span></label>
-                                    <input class="form-control" name="company_name" id="company_name" value="{{old('company_name')}}" type="text">
-                                </div>
-                            </div>
                             <div class="col-sm-2">
                                 <div class="form-group">
                                     <label for="title">Title</label>
@@ -66,6 +60,13 @@
                                     <input class="form-control" name="l_name" id="l_name" value="{{old('l_name')}}" type="text">
                                 </div>
                             </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Company Name <span class="red">*</span></label>
+                                    <input class="form-control" name="company_name" id="company_name" value="{{old('company_name')}}" type="text">
+                                </div>
+                            </div>
+
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="designation">Designation <span class="red">*</span></label>

@@ -38,8 +38,12 @@ Route::group(['namespace'=>'frontend'],function(){
 
     Route::get('conference-delegate-registration','RegistrationController@get_conference_registration');
     Route::post('conference-delegate-registration','RegistrationController@post_conference_registration');
+
     Route::get('foreign-delegate-registration','RegistrationController@get_foreign_delegate_registration');
     Route::post('foreign-delegate-registration','RegistrationController@post_foreign_delegate_registration');
+
+    Route::get('diplomatic-official-registration','RegistrationController@get_diplomatic_registration');
+    Route::post('diplomatic-official-registration','RegistrationController@post_diplomatic_registration');
     /*==============================Registration =========================*/
 
     /*======================The Show============================*/
@@ -126,6 +130,10 @@ Route::group(['namespace'=>'backend'],function(){
         /*======================================= Foreign Delegate ================================= */
         Route::get('foreign-delegates','ForeignDelegateController@index');
         /*======================================= Foreign Delegate ================================= */
+
+        /*======================================= diplomatic-official ================================= */
+        Route::get('diplomatic-official','DiplomaticController@index');
+        /*======================================= diplomatic-official ================================= */
     });
     /* ================================================ Admin CONTROL Start============================================================== */
 

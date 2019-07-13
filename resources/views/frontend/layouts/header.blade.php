@@ -140,7 +140,7 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('exhibitor-registration')}}">Exhibitor Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Conference Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('embassy-official-registration')}}">Embassy Official Registration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('diplomatic-official-registration')}}">Diplomatic Official Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('')}}">Knowledge Sharing Programme Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('')}}">Media Registration</a></li>
                             </ul>

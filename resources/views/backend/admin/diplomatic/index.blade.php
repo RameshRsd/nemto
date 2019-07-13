@@ -37,7 +37,7 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">Foreign Delegates Registration Details</h3>
+                            <h3 class="box-title">Diplomatic Official Registration Details</h3>
                             {{--<h3 class="box-title pull-right"><a href="{{url('admin/create-events')}}" class="btn btn-primary btn-xs">Create New Event</a></h3>--}}
                         </div>
                         <!-- /.box-header -->
@@ -50,25 +50,17 @@
                                     <th>Address</th>
                                     <th>Mobile</th>
                                     <th>Email</th>
-                                    <th>Recommended</th>
-                                    <th>Occupation</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($foreign_delegates as $key=>$delegate)
+                                @foreach($diplomatics as $key=>$diplomatic)
                                     <tr>
                                         <td>{{++$key}}</td>
-                                        <td>{{$delegate->f_name}} {{$delegate->l_name}}</td>
-                                        <td>{{$delegate->district->name}}, {{$delegate->district->state->name}}, {{$delegate->district->state->country->name}}</td>
-                                        <td>{{$delegate->mobile1}}</td>
-                                        <td>{{$delegate->email}}</td>
-                                        <td>
-                                            {{$delegate->recommended->name}} @if(isset($delegate->recommended_other))<br>({{$delegate->recommended_other}})@endif
-                                        </td>
-                                        <td>
-                                            {{$delegate->occupation->name}}
-                                        </td>
+                                        <td>{{$diplomatic->f_name}} {{$diplomatic->l_name}}</td>
+                                        <td>{{$diplomatic->district->name}}, {{$diplomatic->district->state->name}}, {{$diplomatic->district->state->country->name}}</td>
+                                        <td>{{$diplomatic->mobile}}</td>
+                                        <td>{{$diplomatic->email}}</td>
                                         <td>
                                             <a href="#" class="btn btn-primary btn-xs fa fa-eye"></a>
                                             <a href="#" class="btn btn-danger btn-xs fa fa-trash"></a>
