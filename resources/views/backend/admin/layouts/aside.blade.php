@@ -70,6 +70,17 @@
                     </ul>
                 </li>
 
+                <li class="treeview @if(request()->segment('2') =='foreign-delegates' || request()->segment('2') =='view-foreign-delegates') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Foreign Delegates</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='foreign-delegates') active @endif"><a href="{{url('admin/foreign-delegates')}}"><i class="fa fa-eye"></i> View Foreign Delegates</a></li>
+                    </ul>
+                </li>
+
             </ul>
             <!-- /.sidebar-menu -->
         </section>
