@@ -92,6 +92,28 @@
                     </ul>
                 </li>
 
+                <li class="treeview @if(request()->segment('2') =='abstract-submission' || request()->segment('2') =='view-abstract-submission') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Abstract Submission</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='abstract-submission') active @endif"><a href="{{url('admin/abstract-submission')}}"><i class="fa fa-eye"></i> View Abstract Submission</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview @if(request()->segment('2') =='b2b-meetings' || request()->segment('2') =='view-b2b-meetings') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>B2B Meetings</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='b2b-meetings') active @endif"><a href="{{url('admin/b2b-meetings')}}"><i class="fa fa-eye"></i> View Request Details</a></li>
+                    </ul>
+                </li>
+
             </ul>
             <!-- /.sidebar-menu -->
         </section>

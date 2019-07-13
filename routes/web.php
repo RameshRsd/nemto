@@ -44,6 +44,12 @@ Route::group(['namespace'=>'frontend'],function(){
 
     Route::get('diplomatic-official-registration','RegistrationController@get_diplomatic_registration');
     Route::post('diplomatic-official-registration','RegistrationController@post_diplomatic_registration');
+
+    Route::get('abstract-submission','RegistrationController@get_abstract_submission');
+    Route::post('abstract-submission','RegistrationController@post_abstract_submission');
+
+    Route::get('b2b-meetings','RegistrationController@get_b2b_meetings');
+    Route::post('b2b-meetings','RegistrationController@post_b2b_meetings');
     /*==============================Registration =========================*/
 
     /*======================The Show============================*/
@@ -121,6 +127,7 @@ Route::group(['namespace'=>'backend'],function(){
 
         /*======================================= Exhibitions ================================= */
         Route::get('exhibitions','ExhibitionController@index');
+        Route::post('exhibitions/update_status/{id}','ExhibitionController@update_status');
         /*======================================= Exhibitions ================================= */
 
         /*======================================= Delegate ================================= */
@@ -134,6 +141,14 @@ Route::group(['namespace'=>'backend'],function(){
         /*======================================= diplomatic-official ================================= */
         Route::get('diplomatic-official','DiplomaticController@index');
         /*======================================= diplomatic-official ================================= */
+
+        /*======================================= abstract-submission ================================= */
+        Route::get('abstract-submission','AbstractController@index');
+        /*======================================= abstract-submission ================================= */
+
+        /*======================================= b2b-meetings ================================= */
+        Route::get('b2b-meetings','BusinessController@index');
+        /*======================================= b2b-meetings ================================= */
     });
     /* ================================================ Admin CONTROL Start============================================================== */
 

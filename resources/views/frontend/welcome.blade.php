@@ -124,7 +124,7 @@
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/exhibition.png')}}" alt=""></i>
                         <h4 class="card-feature__title"><span class="card-feature__icon">
                             </span>B2B MEETINGS</h4>
-                        <a href="#" class="btn btn-warning">Let's Start</a>
+                        <a href="{{url('b2b-meetings')}}" class="btn btn-warning">Let's Start</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -132,7 +132,7 @@
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/abstract.png')}}" alt=""></i>
                         <h4 class="card-feature__title"><span class="card-feature__icon">
                             </span>ABSTRACT SUBMISSION</h4>
-                        <a href="#" class="btn btn-dark">Let's Start</a>
+                        <a href="{{url('abstract-submission')}}" class="btn btn-dark">Let's Start</a>
                     </div>
                 </div>
             </div>

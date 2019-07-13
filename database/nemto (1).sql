@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 13, 2019 at 08:46 AM
+-- Generation Time: Jul 13, 2019 at 11:02 AM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -21,6 +21,74 @@ SET time_zone = "+00:00";
 --
 -- Database: `nemto`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `abstract_submissions`
+--
+
+CREATE TABLE `abstract_submissions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` enum('Mr','Mrs','Ms','Dr','Er','Prof','Col') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `presentation_title` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mobile` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address1` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `abstract_info` text COLLATE utf8mb4_unicode_ci,
+  `objective` text COLLATE utf8mb4_unicode_ci,
+  `method` text COLLATE utf8mb4_unicode_ci,
+  `result` text COLLATE utf8mb4_unicode_ci,
+  `conclusion` text COLLATE utf8mb4_unicode_ci,
+  `question1` text COLLATE utf8mb4_unicode_ci,
+  `question2` text COLLATE utf8mb4_unicode_ci,
+  `nature` text COLLATE utf8mb4_unicode_ci,
+  `status` enum('active','inactive') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `file` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `photo` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `abstract_submissions`
+--
+
+INSERT INTO `abstract_submissions` (`id`, `title`, `name`, `company_name`, `presentation_title`, `email`, `mobile`, `address1`, `abstract_info`, `objective`, `method`, `result`, `conclusion`, `question1`, `question2`, `nature`, `status`, `file`, `photo`, `created_at`, `updated_at`) VALUES
+(1, 'Mr', 'Arden Mckay', 'Sheppard Atkinson Associates', 'Veniam consequatur', 'duwujydip@mailinator.net', '4645652', '98 West Old Boulevard', 'Dolorem explicabo V', 'Eius molestias optio', 'Dolorem sed et atque', 'Nulla praesentium of', 'Magna sed rerum libe', 'Sint adipisicing err', 'Et deleniti et quam', 'Qui nesciunt in ips', 'inactive', NULL, NULL, '2019-07-13 02:23:27', '2019-07-13 02:23:27'),
+(2, 'Prof', 'Dustin Santos', 'Powell and Johnston Plc', 'Rerum quia provident', 'puzu@mailinator.com', '456456', '474 White Second Court', 'Cum dolore necessita', 'Commodo quo sequi vo', 'Dolore laudantium t', 'Fuga Ullamco ex mol', 'Atque rerum velit n', 'Id qui do sint sed', 'Provident nisi quia', 'Id qui deserunt sint', 'inactive', '8de60e056796527763f7137eff9f059e.1563007126.jpg', '43c04873c0e13e1a3719aef7a913a4ae.1563007126.jpg', '2019-07-13 02:53:46', '2019-07-13 02:53:46');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `business_meetings`
+--
+
+CREATE TABLE `business_meetings` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `website` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `designation` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tel` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mobile` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `details` text COLLATE utf8mb4_unicode_ci,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `prefer_com` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` enum('active','inactive') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `business_meetings`
+--
+
+INSERT INTO `business_meetings` (`id`, `name`, `company_name`, `website`, `designation`, `tel`, `mobile`, `address`, `details`, `email`, `prefer_com`, `status`, `created_at`, `updated_at`) VALUES
+(1, 'Xanthus Pitts', 'Hoffman and Doyle Traders', 'https://www.rog.us', 'Alias quasi sed dolo', '+1 (772) 669-4729', '4545', 'Ipsam labore et in e', 'Reprehenderit ea odi', 'nipuwogijo@mailinator.net', 'Roach Noel LLC', 'inactive', '2019-07-13 03:12:45', '2019-07-13 03:12:45');
 
 -- --------------------------------------------------------
 
@@ -244,6 +312,13 @@ CREATE TABLE `exhibitors` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `exhibitors`
+--
+
+INSERT INTO `exhibitors` (`id`, `company_name`, `title`, `f_name`, `l_name`, `designation`, `address1`, `address2`, `country_id`, `state_id`, `district_id`, `city`, `tel`, `mobile`, `email`, `email2`, `website`, `status`, `created_at`, `updated_at`) VALUES
+(1, 'Ramirez Page Traders', 'Ms', 'Cullen', 'Wood', 'Est mollitia consequ', '999 West First Road', 'Voluptas odio rerum', '1', '2', '40', 'Eum nemo proident s', '+1 (495) 739-5172', '67769', 'razenowi@mailinator.net', 'wywasu@mailinator.com', 'https://www.zahoperakaw.ca', 'active', '2019-07-13 02:29:17', '2019-07-13 02:40:48');
+
 -- --------------------------------------------------------
 
 --
@@ -316,7 +391,10 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2019_07_13_043511_create_recommended_table', 2),
 (9, '2019_07_13_043537_create_occupations_table', 2),
 (10, '2019_07_13_053241_create_foreign_delegates_table', 3),
-(11, '2019_07_13_063006_create_diplomatics_table', 4);
+(11, '2019_07_13_063006_create_diplomatics_table', 4),
+(12, '2019_07_13_075755_create_abstracts_table', 5),
+(13, '2019_07_13_080443_create_abstract_submissions_table', 6),
+(14, '2019_07_13_085137_create_business_meetings_table', 7);
 
 -- --------------------------------------------------------
 
@@ -445,6 +523,18 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `ty
 --
 
 --
+-- Indexes for table `abstract_submissions`
+--
+ALTER TABLE `abstract_submissions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `business_meetings`
+--
+ALTER TABLE `business_meetings`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `countries`
 --
 ALTER TABLE `countries`
@@ -522,6 +612,18 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `abstract_submissions`
+--
+ALTER TABLE `abstract_submissions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `business_meetings`
+--
+ALTER TABLE `business_meetings`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `delegates`
 --
 ALTER TABLE `delegates`
@@ -537,7 +639,7 @@ ALTER TABLE `diplomatics`
 -- AUTO_INCREMENT for table `exhibitors`
 --
 ALTER TABLE `exhibitors`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `foreign_delegates`
@@ -549,7 +651,7 @@ ALTER TABLE `foreign_delegates`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `occupations`

@@ -141,8 +141,8 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Conference Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('diplomatic-official-registration')}}">Diplomatic Official Registration</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('')}}">Knowledge Sharing Programme Registration</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('')}}">Media Registration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('b2b-meetings')}}">B2B Meetings</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('abstract-submission')}}">Abstract Submission</a></li>
                             </ul>
                         </li>
                         <li class="nav-item submenu dropdown">
