@@ -39,11 +39,11 @@
                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
                 <ul class="list header_social">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">AGENDA</a></li>
-                    <li><a href="#">LAYOUT PLAN</a></li>
-                    <li><a href="#">MEDIA</a></li>
-                    <li><a href="#">CONTACT US </a></li>
+                    <li><a href="{{url('')}}">HOME</a></li>
+                    <li><a href="{{url('agenda')}}">AGENDA</a></li>
+                    <li><a href="{{url('layout-plan')}}">LAYOUT PLAN</a></li>
+                    <li><a href="{{url('media')}}">MEDIA</a></li>
+                    <li><a href="{{url('contact-us')}}">CONTACT US </a></li>
                 </ul>
             </div>
         </div>
@@ -160,13 +160,13 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Desk <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="{{url('official-travel-partners')}}"> Official Travel Partner</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('visa-information')}}"> Visa Information</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('travel-visa-information')}}"> Visa Information</a></li>
                             </ul>
                         </li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Foreign Delegate <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="{{url('highlights')}}"> Highlights</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('foreign-delegate-highlights')}}"> Highlights</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('delegate-registration')}}">Delegate Registration</a></li>
                             </ul>
                         </li>

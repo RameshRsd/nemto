@@ -51,6 +51,7 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::get('event-activities', 'TheShowController@event_activities');
     Route::get('past-show-report-2018', 'TheShowController@past_report_2018');
     Route::get('about-organisers', 'TheShowController@about_organisers');
+    Route::get('official-sales-partner', 'TheShowController@official_sales_partner');
     Route::get('supporting-organisations', 'TheShowController@supporting_organisations');
     Route::get('strategic-organisations', 'TheShowController@strategic_organisations');
     Route::get('thank-you-sponsors-2018', 'TheShowController@thank_you_sponsors_2018');
@@ -65,6 +66,7 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::get('visa-invitation-letter', 'ExhibitionController@visa_invitation_letter');
     Route::get('venue-details', 'ExhibitionController@venue_details');
     Route::get('stand-and-packages', 'ExhibitionController@stand_and_packages');
+    Route::get('sponsorship-opportunities', 'ExhibitionController@sponsorship_opportunities');
     Route::get('exhibitor-list-2018', 'ExhibitionController@exhibitor_list_2018');
     /*======================Exhibition============================*/
 
@@ -92,7 +94,15 @@ Route::group(['namespace'=>'frontend'],function(){
 
     //* ============================ Travel Desk Controller ==================*//
     Route::get('official-travel-partners', 'TravelDeskController@official_travel_partners');
+    Route::get('travel-visa-information', 'TravelDeskController@travel_visa_information');
     //* ============================ Travel Desk Controller ==================*//
+    //* ============================ Foreign Delegate Controller ==================*//
+    Route::get('foreign-delegate-highlights', 'ForeignDelegateController@foreign_delegate_highlights');
+    //* ============================ Foreign Delegate Controller ==================*//
+
+    //* ============================ Contact us ==================*//
+    Route::any('contact-us', 'HomeController@contact_us');
+    //* ============================ Contact Us ==================*//
 
 
 

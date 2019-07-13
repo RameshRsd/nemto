@@ -1,6 +1,6 @@
 
 
-@extends('user.layouts.master')
+@extends('frontend.layouts.master')
 @section('content')
     <!-- ================ contact section start ================= -->
     <section class="contact-section area-padding">
@@ -24,7 +24,7 @@
 
                 <div class="col-lg-4">
                     <div class="right_side_registration">
-                        @include('user.layouts.all_pages_right_side')
+                        @include('frontend.layouts.right-sidebar')
                     </div>
                 </div>
             </div>

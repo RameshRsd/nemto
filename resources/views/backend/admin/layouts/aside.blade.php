@@ -38,14 +38,18 @@
             <ul class="sidebar-menu" data-widget="tree">
                 <!-- Optionally, you can add icons to the links -->
                 <li class="@if(request()->segment('2') =='') treeview active open @endif">
-                    <a href="#"><i class="fa fa-link"></i> <span>User Management</span>
+                    <a href="#"><i class="fa fa-link"></i> <span>View Registration</span>
                         <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#">Users</a></li>
-                        <li><a href="#">Link in level 2</a></li>
+                        <li><a href="{{url('exhibitor-registration')}}">Exhibitor Registration</a></li>
+                        <li><a href="{{url('conference-delegate-registration')}}">Conference Delegate Registration</a></li>
+                        <li><a href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></li>
+                        <li><a href="{{url('embassy-official-registration')}}">Embassy Official Registration</a></li>
+                        <li><a href="{{url('')}}">Knowledge Sharing Programme Registration</a></li>
+                        <li><a href="{{url('')}}">Media Registration</a></li>
                     </ul>
                 </li>
             </ul>

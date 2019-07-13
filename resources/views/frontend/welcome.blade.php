@@ -140,54 +140,57 @@
     </section>
     <!--================ Feature section end =================-->
     <!--================About  Area =================-->
-    <section class="feature-section">
-        <div class="container">
+    <section class="event_show-section">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card card-feature text-center text-lg-left">
-
+                    <div class="card card-feature_events text-center text-lg-left">
                         <h4 class="card-feature__title"><span class="card-feature__icon">
-                            </span>
-                            Medical Tourism Asia Summit 2018</h4>
+                            <i class="fa fa-hospital"></i> </span>Medical Tourism Asia Summit 2018</h4>
                         <p class="card-feature__subtitle">
-                            ContinuityLink offers multiple Business Continuity training opportunities in Europe, the Americas and Africa (public or in-house). We offer :</p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-check-circle"></i> First ever International Summit on Medical Value Travel being</a></li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-secondary btn-sm">Read More</a>
+                            Nepal Medical Offers multiple Business Continuity training opportunities in Europe, the Americas and Africa (public or in-house). We offer :
+                            Nepal Medical Offers multiple Business Continuity training opportunities in Europe, the Americas and Africa (public or in-house). We offer :
+                        </p>
+                        <a href="#" class="registration_nemto">Read More</a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card card-feature text-lg-left">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{url("public/images/slider/slider5.jpg")}}" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{url("public/images/slider/slider4.jpg")}}" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{url("public/images/slider/slider1.jpg")}}" class="d-block w-100" alt="...">
+                    <div class="card feature_events_img text-lg-left">
+                        <h3>Photo Gallery</h3>
+                        <div class="photogallery_border">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="{{url("public/images/gallery/08.jpg")}}" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{url("public/images/gallery/09.jpg")}}" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{url("public/images/gallery/10.jpg")}}" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{url("public/images/gallery/11.jpg")}}" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{url("public/images/gallery/12.jpg")}}" alt="...">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card card-feature text-center text-lg-left">
+                    <div class="card card-feature_events text-center text-lg-left">
 
                         <h4 class="card-feature__title"><span class="card-feature__icon">
-                            </span>Medical Tourism Asia Summit 2019</h4>
+                           <i class="fa fa-seedling"></i> </span>Medical Tourism Asia Summit 2019</h4>
                         <p class="card-feature__subtitle">
                             Aliquid architecto culpa eaque enim itaque qui quibusdam quidem sapiente sint unde. Beatae dicta dolor ex id ipsam nihil qui totam voluptatum.
+                            Aliquid architecto culpa eaque enim itaque qui quibusdam quidem sapiente sint unde. Beatae dicta dolor ex id ipsam nihil qui totam voluptatum.
                         </p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-check-circle"></i> Your business objectives</a></li>
-                            <li><a href="#"><i class="fa fa-check-circle"></i> Recognised standards</a></li>
-                            <li><a href="#"><i class="fa fa-check-circle"></i> Best professional practices</a></li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-secondary btn-sm">Read More</a>
+                        <a href="#" class="registration_nemto">Read More</a>
                     </div>
                 </div>
             </div>
@@ -251,7 +254,7 @@
     <!--================MEDICAL TOURISM ASIA SUMMIT FOCUS OBJECTIVES Area END=================-->
     <!--================Sponsore Area  =================-->
     <div class="container">
-        <h2 style="text-align: center">PROPOSED SPONSORS</h2>
+        <h2 style="text-align: center">Proposed Sponsors Nepal</h2>
     </div>
     <section class="sponsore_nemto" style="background: #0096ff">
         <div class="container">

@@ -225,7 +225,7 @@
 
                 <div class="col-lg-4">
                     <div class="right_side_registration">
-                        @include('frontend.layouts.right-sidebar')
+                       @include('frontend.layouts.right-sidebar')
                     </div>
                 </div>
             </div>

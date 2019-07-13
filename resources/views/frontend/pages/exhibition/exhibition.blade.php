@@ -26,24 +26,26 @@
                             Our endeavour, through the “Advantage Health Care – India 2017” is to showcase India and its immense pool of medical capabilities as well as create opportunities for healthcare collaborations between the participating countries.
                         </p>
                         <h2>ADVANTAGES OF HEALTHCARE AND WELLNESS INDUSTRY IN INDIA</h2>
-                        <li>State of the art Hospitals with Excellent Infrastructure</li>
-                        <li>Largest pool of Highly qualified and skilled doctors</li>
-                        <li>Well trained & caring nurses and paramedical staff</li>
-                        <li>Latest and highly advanced medical devices</li>
-                        <li>Affordable treatment at costs just 25%-30% of what it would cost in other countries</li>
-                        <li>Absence of waiting time for treatment.</li>
-                        <li>Fluent English-speaking and International languages speaking doctors, nurses and paramedical staff means no language problem for International patients</li>
-                        <li>Ultramodern pharmaceutical manufacturing and packaging facilities</li>
-                        <li>Large number of private hospitals that are accredited with the National Accreditation Board for Hospitals & Healthcare Providers (NABH) and Joint Commission International (JCI).</li>
-                        <li>History of Indian system of medicine is over 5000 years old</li>
-                        <li>'AYUSH', acronym of Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homoeopathy is widely practiced in India</li>
-                        <li>India's Ayurveda and Yoga have emerged globally as the most effective ways for wellness of both mind and the body</li>
+                        <ul>
+                            <li>State of the art Hospitals with Excellent Infrastructure</li>
+                            <li>Largest pool of Highly qualified and skilled doctors</li>
+                            <li>Well trained & caring nurses and paramedical staff</li>
+                            <li>Latest and highly advanced medical devices</li>
+                            <li>Affordable treatment at costs just 25%-30% of what it would cost in other countries</li>
+                            <li>Absence of waiting time for treatment.</li>
+                            <li>Fluent English-speaking and International languages speaking doctors, nurses and paramedical staff means no language problem for International patients</li>
+                            <li>Ultramodern pharmaceutical manufacturing and packaging facilities</li>
+                            <li>Large number of private hospitals that are accredited with the National Accreditation Board for Hospitals & Healthcare Providers (NABH) and Joint Commission International (JCI).</li>
+                            <li>History of Indian system of medicine is over 5000 years old</li>
+                            <li>'AYUSH', acronym of Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homoeopathy is widely practiced in India</li>
+                            <li>India's Ayurveda and Yoga have emerged globally as the most effective ways for wellness of both mind and the body</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="right_side_registration">
-                        @include('frontend.layouts.right-sidebar')
+                       @include('frontend.layouts.right-sidebar')
                     </div>
                 </div>
             </div>
