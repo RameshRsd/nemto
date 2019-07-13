@@ -105,6 +105,10 @@ Route::group(['namespace'=>'backend'],function(){
     /* ================================================ Admin CONTROL Start============================================================== */
     Route::group(['middleware'=>'admin','prefix'=>'admin','namespace'=>'Admin'],function(){
         Route::get('','AdminController@index');
+
+        /*======================================= Exhibitions ================================= */
+        Route::get('exhibitions','ExhibitionController@index');
+        /*======================================= Exhibitions ================================= */
     });
     /* ================================================ Admin CONTROL Start============================================================== */
 
