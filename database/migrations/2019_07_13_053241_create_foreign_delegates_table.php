@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDelegatesTable extends Migration
+class CreateForeignDelegatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,18 @@ class CreateDelegatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('delegates', function (Blueprint $table) {
+        Schema::create('foreign_delegates', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->enum('register',['Yes','No'])->nullable();
+            $table->enum('attend',['Yes','No'])->nullable();
+            $table->enum('gender',['Male','Female','Others'])->nullable();
             $table->enum('title',['Mr','Mrs','Ms','Dr','Er','Prof','Col'])->nullable();
-            $table->string('company_name')->nullable();
             $table->string('f_name')->nullable();
             $table->string('l_name')->nullable();
+            $table->integer('recommended_id')->nullable();
+            $table->string('recommended_other')->nullable();
+            $table->integer('occupation_id')->nullable();
+            $table->string('company_name')->nullable();
             $table->string('designation')->nullable();
             $table->string('address1')->nullable();
             $table->string('address2')->nullable();
@@ -26,11 +32,13 @@ class CreateDelegatesTable extends Migration
             $table->string('state_id')->nullable();
             $table->string('district_id')->nullable();
             $table->string('city')->nullable();
-            $table->string('tel')->nullable();
-            $table->string('mobile')->nullable();
+            $table->string('tel1')->nullable();
+            $table->string('tel2')->nullable();
+            $table->string('mobile1')->nullable();
+            $table->string('mobile2')->nullable();
             $table->string('email')->nullable();
-            $table->string('email2')->nullable();
             $table->string('website')->nullable();
+            $table->text('details')->nullable();
             $table->enum('status',['active','inactive'])->nullable();
             $table->timestamps();
         });
@@ -43,6 +51,6 @@ class CreateDelegatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('delegates');
+        Schema::dropIfExists('foreign_delegates');
     }
 }

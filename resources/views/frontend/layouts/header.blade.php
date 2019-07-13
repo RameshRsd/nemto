@@ -119,7 +119,7 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-speakers-2018')}}">Speakers 2018</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('agenda-programme')}}">Agenda Programme</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('regional-forum-schedule')}}">Regional Forums - Schedule</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('delegate-registration')}}">Delegate Registration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('visa-invitation-letter')}}">Visa Invitation Letter</a></li>
                             </ul>
                         </li>
@@ -140,7 +140,7 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('exhibitor-registration')}}">Exhibitor Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Conference Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('embassy-official-registration')}}">Embassy Official Registration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('diplomatic-official-registration')}}">Diplomatic Official Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('')}}">Knowledge Sharing Programme Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('')}}">Media Registration</a></li>
                             </ul>

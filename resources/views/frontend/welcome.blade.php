@@ -85,15 +85,15 @@
                         <h4 class="card-feature__title"><span class="card-feature__icon">
                                 <i class="fa fa-check-square"></i>
                             </span><a href="{{url('exhibitor-registration')}}">Exhibitor Registration</a></h4>
-                        <a href="{{url('exhibitor-registration')}}" class="registration_nemto">Registration</a>
+                        <a href="{{url('exhibitor-registration')}}" class="btn btn-outline-primary">Let's Start</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card card-feature text-center text-lg-left" style="background: #dee2e6">
                         <h4 class="card-feature__title"><span class="card-feature__icon">
                                 <i class="fa fa-check-square"></i>
-                            </span><a href="{{url('conference-registration')}}">Conference Registration</a></h4>
-                        <a href="{{url('conference-registration')}}" class="registration_nemto">Registration</a>
+                            </span><a href="{{url('conference-delegate-registration')}}">Conference Registration</a></h4>
+                        <a href="{{url('conference-delegate-registration')}}" class="btn btn-outline-danger">Let's Start</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -101,7 +101,7 @@
                         <h4 class="card-feature__title"><span class="card-feature__icon">
                                 <i class="fa fa-check-square"></i>
                             </span><a href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></h4>
-                        <a href="{{url('foreign-delegate-registration')}}" class="registration_nemto">Registration</a>
+                        <a href="{{url('foreign-delegate-registration')}}" class="btn btn-outline-dark">Let's Start</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/embassy.png')}}" alt=""></i>
                         <h4 class="card-feature__title_re"><span class="card-feature__icon">
                             </span>DIPLOMATIC OFFICIALS</h4>
-                        <a href="#" class="registration_nemto">Registration</a>
+                        <a href="{{url('diplomatic-official-registration')}}" class="btn btn-danger">Let's Start</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -121,7 +121,7 @@
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/exhibition.png')}}" alt=""></i>
                         <h4 class="card-feature__title_re"><span class="card-feature__icon">
                             </span>B2B MEETINGS</h4>
-                        <a href="#" class="registration_nemto">Registration</a>
+                        <a href="#" class="btn btn-warning">Let's Start</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -129,7 +129,7 @@
                         <i class="nemto_icon"> <img src="{{url('public/images/icon/abstract.png')}}" alt=""></i>
                         <h4 class="card-feature__title_re"><span class="card-feature__icon">
                             </span>ABSTRACT SUBMISSION</h4>
-                        <a href="#" class="registration_nemto">Registration</a>
+                        <a href="#" class="btn btn-dark">Let's Start</a>
                     </div>
                 </div>
             </div>

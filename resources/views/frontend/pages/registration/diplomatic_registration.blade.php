@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contact-title">Conference Delegate Registration</h2>
+                    <h2 class="contact-title">Diplomatic Official Registration</h2>
                     @if(session('success'))
                         <span class="btn btn-success btn-sm">Success</span> {{session('success')}}<br>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -27,16 +27,12 @@
                         </div>
                         <div style="clear: both;"></div>
                     @endif
+
                 </div>
                 <div class="col-lg-8">
                     <form class="form-contact contact_form" action="" method="post">
                         {{csrf_field()}}
                         <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label><b class="form_headline">CONTACT INFORMATION</b></label>
-                                </div>
-                            </div>
                             <div class="col-sm-2">
                                 <div class="form-group">
                                     <label for="title">Title</label>
@@ -54,30 +50,27 @@
                             </div>
                             <div class="col-sm-5">
                                 <div class="form-group">
-                                    <label for="l_name">SURNAME</label>
-                                    <input class="form-control" name="l_name" id="l_name" value="{{old('l_name')}}" type="text">
+                                    <label for="f_name">First Name <span class="red">*</span></label>
+                                    <input class="form-control" name="f_name" id="f_name" value="{{old('f_name')}}" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-5">
                                 <div class="form-group">
-                                    <label for="f_name">FIRST NAME</label>
-                                    <input class="form-control" name="f_name" id="f_name" value="{{old('f_name')}}" type="text">
+                                    <label for="l_name">Last Name <span class="red">*</span></label>
+                                    <input class="form-control" name="l_name" id="l_name" value="{{old('l_name')}}" type="text">
                                 </div>
                             </div>
-                            {{----}}
-
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="designation">DESIGNATION <span class="red">*</span></label>
-                                    <input class="form-control" name="designation" id="designation" value="{{old('designation')}}" type="text">
+                                    <label>Company Name <span class="red">*</span></label>
+                                    <input class="form-control" name="company_name" id="company_name" value="{{old('company_name')}}" type="text">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
+
+                            <div class="col-12">
                                 <div class="form-group">
-                                    <label for="">COMPANY NAME<span class="red">*</span></label>
-                                    <input class="form-control" name="company_name" id="company_name" value="{{old('company_name')}}" type="text">
+                                    <label for="designation">Designation <span class="red">*</span></label>
+                                    <input class="form-control" name="designation" id="designation" value="{{old('designation')}}" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -154,26 +147,25 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <div class="form-group mt-3">
-                                    <button type="submit" class="button button-contactForm">Submit</button>
+                                <div class="form-group">
+                                   <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                         </div>
                     </form>
-
-
                 </div>
-
                 <div class="col-lg-4">
                     <div class="right_side_registration">
-                       @include('frontend.layouts.right-sidebar')
+                        @include('frontend.layouts.right-sidebar')
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- ================ contact section end ================= -->
 @endsection
+
 @section('script')
     <script>
         $('#country_id').on('change',function (e) {

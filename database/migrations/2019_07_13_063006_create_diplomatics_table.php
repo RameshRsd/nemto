@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDelegatesTable extends Migration
+class CreateDiplomaticsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDelegatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('delegates', function (Blueprint $table) {
+        Schema::create('diplomatics', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->enum('title',['Mr','Mrs','Ms','Dr','Er','Prof','Col'])->nullable();
             $table->string('company_name')->nullable();
@@ -43,6 +43,6 @@ class CreateDelegatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('delegates');
+        Schema::dropIfExists('diplomatics');
     }
 }

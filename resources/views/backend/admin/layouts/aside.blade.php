@@ -9,17 +9,17 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="{{url('public/server')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="{{url('public/server')}}/dist/img/avatar.png" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>{{\Illuminate\Support\Facades\Auth::user()->name}}</p>
                     <!-- Status -->
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    <a href="{{url('admin')}}"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
 
             <!-- search form (Optional) -->
-            <form action="#" method="get" class="sidebar-form">
+            <form action="{{url('admin')}}" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
@@ -37,21 +37,61 @@
             </ul>
             <ul class="sidebar-menu" data-widget="tree">
                 <!-- Optionally, you can add icons to the links -->
-                <li class="@if(request()->segment('2') =='') treeview active open @endif">
-                    <a href="#"><i class="fa fa-link"></i> <span>View Registration</span>
+                <li class="treeview @if(request()->segment('2') =='users') active open @endif">
+                    <a href="#"><i class="fa fa-users"></i> <span>User Management</span>
                         <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="{{url('exhibitor-registration')}}">Exhibitor Registration</a></li>
-                        <li><a href="{{url('conference-delegate-registration')}}">Conference Delegate Registration</a></li>
-                        <li><a href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></li>
-                        <li><a href="{{url('embassy-official-registration')}}">Embassy Official Registration</a></li>
-                        <li><a href="{{url('')}}">Knowledge Sharing Programme Registration</a></li>
-                        <li><a href="{{url('')}}">Media Registration</a></li>
+                        <li class=" @if(request()->segment('2') =='users') active @endif"><a href="#"><i class="fa fa-users"></i> Users</a></li>
                     </ul>
                 </li>
+
+                <li class="treeview @if(request()->segment('2') =='exhibitions' || request()->segment('2') =='view-exhibition') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Exhibitions</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='exhibitions') active @endif"><a href="{{url('admin/exhibitions')}}"><i class="fa fa-eye"></i> View Exhibitions</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview @if(request()->segment('2') =='delegates' || request()->segment('2') =='view-delegates') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Delegates</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='delegates') active @endif"><a href="{{url('admin/delegates')}}"><i class="fa fa-eye"></i> View Delegates</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview @if(request()->segment('2') =='foreign-delegates' || request()->segment('2') =='view-foreign-delegates') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Foreign Delegates</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='foreign-delegates') active @endif"><a href="{{url('admin/foreign-delegates')}}"><i class="fa fa-eye"></i> View Foreign Delegates</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview @if(request()->segment('2') =='diplomatic-official' || request()->segment('2') =='view-diplomatic-official') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Diplomatic Official</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='diplomatic-official') active @endif"><a href="{{url('admin/diplomatic-official')}}"><i class="fa fa-eye"></i> View Diplomatic Official</a></li>
+                    </ul>
+                </li>
+
             </ul>
             <!-- /.sidebar-menu -->
         </section>

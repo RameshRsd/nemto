@@ -38,10 +38,12 @@ Route::group(['namespace'=>'frontend'],function(){
 
     Route::get('conference-delegate-registration','RegistrationController@get_conference_registration');
     Route::post('conference-delegate-registration','RegistrationController@post_conference_registration');
+
     Route::get('foreign-delegate-registration','RegistrationController@get_foreign_delegate_registration');
     Route::post('foreign-delegate-registration','RegistrationController@post_foreign_delegate_registration');
-    Route::get('delegate-registration','RegistrationController@get_delegate_registration');
-    Route::post('delegate-registration','RegistrationController@post_delegate_registration');
+
+    Route::get('diplomatic-official-registration','RegistrationController@get_diplomatic_registration');
+    Route::post('diplomatic-official-registration','RegistrationController@post_diplomatic_registration');
     /*==============================Registration =========================*/
 
     /*======================The Show============================*/
@@ -96,6 +98,7 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::get('official-travel-partners', 'TravelDeskController@official_travel_partners');
     Route::get('travel-visa-information', 'TravelDeskController@travel_visa_information');
     //* ============================ Travel Desk Controller ==================*//
+
     //* ============================ Foreign Delegate Controller ==================*//
     Route::get('foreign-delegate-highlights', 'ForeignDelegateController@foreign_delegate_highlights');
     //* ============================ Foreign Delegate Controller ==================*//
@@ -103,8 +106,6 @@ Route::group(['namespace'=>'frontend'],function(){
     //* ============================ Contact us ==================*//
     Route::any('contact-us', 'HomeController@contact_us');
     //* ============================ Contact Us ==================*//
-
-
 
 });
 
@@ -117,15 +118,31 @@ Route::group(['namespace'=>'backend'],function(){
     /* ================================================ Admin CONTROL Start============================================================== */
     Route::group(['middleware'=>'admin','prefix'=>'admin','namespace'=>'Admin'],function(){
         Route::get('','AdminController@index');
+
+        /*======================================= Exhibitions ================================= */
+        Route::get('exhibitions','ExhibitionController@index');
+        /*======================================= Exhibitions ================================= */
+
+        /*======================================= Delegate ================================= */
+        Route::get('delegates','DelegateController@index');
+        /*======================================= Delegate ================================= */
+
+        /*======================================= Foreign Delegate ================================= */
+        Route::get('foreign-delegates','ForeignDelegateController@index');
+        /*======================================= Foreign Delegate ================================= */
+
+        /*======================================= diplomatic-official ================================= */
+        Route::get('diplomatic-official','DiplomaticController@index');
+        /*======================================= diplomatic-official ================================= */
     });
     /* ================================================ Admin CONTROL Start============================================================== */
 
 
-    /* ================================================ Admin CONTROL Start============================================================== */
+    /* ================================================ Guest CONTROL Start============================================================== */
     Route::group(['middleware'=>'visitor','prefix'=>'guest','namespace'=>'Guest'],function(){
         Route::get('','GuestController@index');
     });
-    /* ================================================ Admin CONTROL Start============================================================== */
+    /* ================================================ Guest CONTROL Start============================================================== */
 
 
 });
