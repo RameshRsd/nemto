@@ -10,17 +10,13 @@
                     <div class="nemto_the_show">
                         <h1>Official Travel Partner </h1>
                         <p>
-                            “The award aims to create a platform to recognize and showcase the innovations of projects and services provided by organizations and individuals which have created a platform to promote India as a Premier Medical Travel destination.”
+                            “To perform the travel related activities, the below travel partner is our official partner”
                         </p>
-                            <div class="" id="gallery1" align="center">
-                                <p style="text-align:center;font-size:20px;color:#000;font-weight:bold;" align="center">
-
-                                </p>
-                            </div>
-                            <p>
-
-                            </p>
-
+                        <br>
+                        <p><b>Yatra Tours and Travels Pvt. Ltd.</b></p>
+                        <p>Lazimpat, Kathmandu, Nepal</p>
+                        <p>E-mail: info@yatratnt.com</p>
+                        <p><a href="www.yatratnt.com" target="_blank">www.yatratnt.com</a> </p>
                     </div>
                 </div>
 

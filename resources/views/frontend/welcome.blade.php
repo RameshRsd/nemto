@@ -144,8 +144,7 @@
                         <h4 class="card-feature__title"><span class="card-feature__icon">
                             <i class="fa fa-hospital"></i> </span>Medical Tourism Asia Summit 2018</h4>
                         <p class="card-feature__subtitle">
-                            Nepal Medical Offers multiple Business Continuity training opportunities in Europe, the Americas and Africa (public or in-house). We offer :
-                            Nepal Medical Offers multiple Business Continuity training opportunities in Europe, the Americas and Africa (public or in-house). We offer :
+                            It was first initiated to develop the global medical tourism destination in Nepal.  The conference and interactive program was very interesting, there were participated more than 55 companies and 100 plus foreign delegates around the world. This was performed in a very short time within 3 months preparation but the participation was more than our expectation.
                         </p>
                         <a href="#" class="registration_nemto">Read More</a>
                     </div>
@@ -181,10 +180,9 @@
                     <div class="card card-feature_events text-center text-lg-left">
 
                         <h4 class="card-feature__title"><span class="card-feature__icon">
-                           <i class="fa fa-seedling"></i> </span>Medical Tourism Asia Summit 2019</h4>
+                           <i class="fa fa-hospital-alt"></i> </span>Medical Tourism Asia Summit 2019</h4>
                         <p class="card-feature__subtitle">
-                            Aliquid architecto culpa eaque enim itaque qui quibusdam quidem sapiente sint unde. Beatae dicta dolor ex id ipsam nihil qui totam voluptatum.
-                            Aliquid architecto culpa eaque enim itaque qui quibusdam quidem sapiente sint unde. Beatae dicta dolor ex id ipsam nihil qui totam voluptatum.
+                            After the successful of first series of Medical Tourism Asia Summit, we are coming to new series of Medical Tourism Asia Summit 2019 to promote Nepal as a New Global Medical Tourism Destination with the international collaboration for Investment, Technology Sharing and Partnership. Expected 300 foreign delegates, more than 10000 visitors and 500 plus B2B meetings.
                         </p>
                         <a href="#" class="registration_nemto">Read More</a>
                     </div>

@@ -18,48 +18,34 @@
                             </tr>
                             <tr style="background-color:#ecf5f6;">
                                 <td valign="middle" style="height:35px;">
-                                    <div class="main_txt" style="padding-left:10px;">Tradeindia</div>
+                                    <div class="main_txt" style="padding-left:10px;"> ...</div>
                                 </td>
                                 <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt">2</div>
+                                    <div class="main_txt">....</div>
                                 </td>
                                 <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt">79</div>
+                                    <div class="main_txt">...</div>
                                 </td>
                                 <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt"><a href="" target="_blank"></a></div>
+                                    <div class="main_txt"><a href="" target="_blank">...</a></div>
                                 </td>
                             </tr>
 
                             <tr style="background-color:#fff5f6;">
                                 <td valign="middle" style="height:35px;">
-                                    <div class="main_txt" style="padding-left:10px;">W Pratiksha Hospital</div>
+                                    <div class="main_txt" style="padding-left:10px;">.....</div>
                                 </td>
                                 <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt">2</div>
+                                    <div class="main_txt">....</div>
                                 </td>
                                 <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt">90</div>
+                                    <div class="main_txt">....</div>
                                 </td>
                                 <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt"><a href="" target="_blank"></a></div>
+                                    <div class="main_txt"><a href="" target="_blank">...</a></div>
                                 </td>
                             </tr>
 
-                            <tr style="background-color:#ecf5f6;">
-                                <td valign="middle" style="height:35px;">
-                                    <div class="main_txt" style="padding-left:10px;">Wockhardt Hospitals Ltd</div>
-                                </td>
-                                <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt">2</div>
-                                </td>
-                                <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt">59</div>
-                                </td>
-                                <td valign="middle" style="border-left: 1px solid #9473a0;padding-left:10px;height:35px;">
-                                    <div class="main_txt"><a href="" target="_blank"></a></div>
-                                </td>
-                            </tr>
                             </tbody></table>
                     </div>
 

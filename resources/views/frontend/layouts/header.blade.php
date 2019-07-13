@@ -117,7 +117,6 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('highlights')}}">Highlights</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-speakers-2018')}}">Speakers 2018</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('agenda-programme')}}">Agenda Programme</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('regional-forum-schedule')}}">Regional Forums - Schedule</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('visa-invitation-letter')}}">Visa Invitation Letter</a></li>
                             </ul>
@@ -140,19 +139,6 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Conference Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('diplomatic-official-registration')}}">Diplomatic Official Registration</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('')}}">Knowledge Sharing Programme Registration</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('')}}">Media Registration</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Awards <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="{{url('Apply-for-awards')}}"> APPLY FOR AWARDS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('about-the-awards')}}"> About the Awards</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('categories')}}"> Categories</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('payment-fee-details')}}"> Participation Fee</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('public/images/pdf/nemto_awards_terms_and_condition.pdf')}}" target="_blank"> Application Guidelines</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('awards-contact-us')}}">Contacts</a></li>
                             </ul>
                         </li>
                         <li class="nav-item submenu dropdown">

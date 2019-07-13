@@ -10,9 +10,17 @@
                     <div class="nemto_the_show">
                         <h1>Why Attend ?</h1>
                         <p>
-                            The objective of this summit is to promote India as a Premier Global Healthcare Destination and to enable streamlined medical services exports from India. This underlying objective is a unique conglomeration of the ‘5 – Ts’ - talent, tradition, technology, tourism and trade.
+                            The objective of this summit is to promote Nepal as a New Global Global Healthcare Destination and to enable streamlined medical services exports from Nepal. This underlying objective is a unique conglomeration of the global B2B Meetings as below;
                         </p>
-                        <img src="{{url('public/images/pagesimg/objective.jpg')}}" alt="">
+                        <br>
+                        <ul>
+                            <li> Healthcare Service Provider Meet</li>
+                            <li> Healthcare Facilitators Meet</li>
+                            <li> Healthcare Technology Provider Meet</li>
+                            <li> Healthcare  Education Provider Meet</li>
+                            <li> Medicine & Equipment Suppliers Meet</li>
+                            <li> Healthcare Investors Meet</li>
+                        </ul>
                     </div>
                 </div>
 
