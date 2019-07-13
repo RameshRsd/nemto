@@ -90,8 +90,8 @@
                     <div class="card card-feature text-center text-lg-left" style="background: #dee2e6">
                         <h4 class="card-feature__title"><span class="card-feature__icon">
                                 <i class="fa fa-check-square"></i>
-                            </span><a href="{{url('conference-registration')}}">Conference Registration</a></h4>
-                        <a href="{{url('conference-registration')}}" class="registration_nemto">Registration</a>
+                            </span><a href="{{url('conference-delegate-registration')}}">Conference Registration</a></h4>
+                        <a href="{{url('conference-delegate-registration')}}" class="registration_nemto">Registration</a>
                     </div>
                 </div>
                 <div class="col-md-4">

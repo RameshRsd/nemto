@@ -119,7 +119,7 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-speakers-2018')}}">Speakers 2018</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('agenda-programme')}}">Agenda Programme</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('regional-forum-schedule')}}">Regional Forums - Schedule</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('delegate-registration')}}">Delegate Registration</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('visa-invitation-letter')}}">Visa Invitation Letter</a></li>
                             </ul>
                         </li>

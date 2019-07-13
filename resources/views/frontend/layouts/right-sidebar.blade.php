@@ -30,7 +30,7 @@
         </div>
     </div>
 </a>
-<a href="{{url('conference-registration')}}">
+<a href="{{url('conference-delegate-registration')}}">
     <div class="media contact-info form_right_div">
         <span class="contact-info__icon"><i class="fa fa-home"></i></span>
         <div class="media-body form_right">

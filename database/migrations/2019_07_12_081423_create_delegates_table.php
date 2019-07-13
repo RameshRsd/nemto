@@ -15,7 +15,8 @@ class CreateDelegatesTable extends Migration
     {
         Schema::create('delegates', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->enum('title',['Mr','Miss','Mrs'])->nullable();
+            $table->enum('title',['Mr','Mrs','Ms','Dr','Er','Prof','Col'])->nullable();
+            $table->string('company_name')->nullable();
             $table->string('f_name')->nullable();
             $table->string('l_name')->nullable();
             $table->string('designation')->nullable();

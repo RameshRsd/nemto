@@ -40,8 +40,6 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::post('conference-delegate-registration','RegistrationController@post_conference_registration');
     Route::get('foreign-delegate-registration','RegistrationController@get_foreign_delegate_registration');
     Route::post('foreign-delegate-registration','RegistrationController@post_foreign_delegate_registration');
-    Route::get('delegate-registration','RegistrationController@get_delegate_registration');
-    Route::post('delegate-registration','RegistrationController@post_delegate_registration');
     /*==============================Registration =========================*/
 
     /*======================The Show============================*/
@@ -96,6 +94,7 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::get('official-travel-partners', 'TravelDeskController@official_travel_partners');
     Route::get('travel-visa-information', 'TravelDeskController@travel_visa_information');
     //* ============================ Travel Desk Controller ==================*//
+
     //* ============================ Foreign Delegate Controller ==================*//
     Route::get('foreign-delegate-highlights', 'ForeignDelegateController@foreign_delegate_highlights');
     //* ============================ Foreign Delegate Controller ==================*//
@@ -118,6 +117,10 @@ Route::group(['namespace'=>'backend'],function(){
 
         /*======================================= Exhibitions ================================= */
         Route::get('exhibitions','ExhibitionController@index');
+        /*======================================= Exhibitions ================================= */
+
+        /*======================================= Exhibitions ================================= */
+        Route::get('delegates','DelegateController@index');
         /*======================================= Exhibitions ================================= */
     });
     /* ================================================ Admin CONTROL Start============================================================== */

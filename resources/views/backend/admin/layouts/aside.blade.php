@@ -59,6 +59,17 @@
                     </ul>
                 </li>
 
+                <li class="treeview @if(request()->segment('2') =='delegates' || request()->segment('2') =='view-delegates') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Delegates</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='delegates') active @endif"><a href="{{url('admin/delegates')}}"><i class="fa fa-eye"></i> View Delegates</a></li>
+                    </ul>
+                </li>
+
             </ul>
             <!-- /.sidebar-menu -->
         </section>
