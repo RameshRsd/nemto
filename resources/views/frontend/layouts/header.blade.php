@@ -102,7 +102,6 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('who-can-exhibit')}}">Who Can Exhibit?</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('exhibitor-profile')}}">Exhibitor Profile</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('exhibitor-registration')}}">Exhibitor Registration</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('layout-plan')}}">Layout Plan</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('visa-invitation-letter')}}">Visa Invitation Letter</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('venue-details')}}">Venue Details</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('stand-and-packages')}}">Stand And Packages</a></li>

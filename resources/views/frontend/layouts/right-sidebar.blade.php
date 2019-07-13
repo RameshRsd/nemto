@@ -6,14 +6,22 @@
         </div>
     </div>
 </a>
-{{--<a href="{{url('delegate-registration')}}">--}}
-    {{--<div class="media contact-info form_right_div">--}}
-        {{--<span class="contact-info__icon"><i class="fa fa-home"></i></span>--}}
-        {{--<div class="media-body form_right">--}}
-            {{--<h3>DELEGATE REGISTRATION</h3>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</a>--}}
+<a href="{{url('conference-delegate-registration')}}">
+    <div class="media contact-info form_right_div">
+        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
+        <div class="media-body form_right">
+            <h3>CONFERENCE REGISTRATION</h3>
+        </div>
+    </div>
+</a>
+<a href="{{url('conference-programme')}}">
+    <div class="media contact-info form_right_div">
+        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
+        <div class="media-body form_right">
+            <h3>FOREIGN DELEGATE REGISTRATION </h3>
+        </div>
+    </div>
+</a>
 <a href="{{url('diplomatic-official-registration')}}">
     <div class="media contact-info form_right_div">
         <span class="contact-info__icon"><i class="fa fa-home"></i></span>
@@ -22,42 +30,11 @@
         </div>
     </div>
 </a>
-<a href="{{url('khowledge-shaing-registration')}}">
+<a href="{{url('diplomatic-official-registration')}}">
     <div class="media contact-info form_right_div">
         <span class="contact-info__icon"><i class="fa fa-home"></i></span>
         <div class="media-body form_right">
-            <h3>KNOWLEDGE SHARING REGISTRATION</h3>
-        </div>
-    </div>
-</a>
-<a href="{{url('conference-delegate-registration')}}">
-    <div class="media contact-info form_right_div">
-        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
-        <div class="media-body form_right">
-            <h3>CONFERENCE REGISTRATION</h3>
-        </div>
-    </div>
-</a><a href="{{url('media-registration')}}">
-    <div class="media contact-info form_right_div">
-        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
-        <div class="media-body form_right">
-            <h3>MEDIA REGISTRATION</h3>
-        </div>
-    </div>
-</a>
-<a href="{{url('regional-forums-schedule')}}">
-    <div class="media contact-info form_right_div">
-        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
-        <div class="media-body form_right">
-            <h3>REGIONAL FORUMS - SCHEDULE</h3>
-        </div>
-    </div>
-</a>
-<a href="{{url('conference-programme')}}">
-    <div class="media contact-info form_right_div">
-        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
-        <div class="media-body form_right">
-            <h3>CONFERENCE PROGRAMME</h3>
+            <h3>B2B REGISTRATION</h3>
         </div>
     </div>
 </a>
@@ -65,18 +42,11 @@
     <div class="media contact-info form_right_div">
         <span class="contact-info__icon"><i class="fa fa-home"></i></span>
         <div class="media-body form_right">
-            <h3>STALL BOOKING</h3>
+            <h3>COMMERCIAL BOOKING</h3>
         </div>
     </div>
 </a>
-<a href="{{url('layout-plan')}}">
-    <div class="media contact-info form_right_div">
-        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
-        <div class="media-body form_right">
-            <h3>LAYOUT PLAN</h3>
-        </div>
-    </div>
-    <a href="{{url('sponsorship-opportunities')}}">
+<a href="{{url('sponsorship-opportunities')}}">
         <div class="media contact-info form_right_div">
             <span class="contact-info__icon"><i class="fa fa-home"></i></span>
             <div class="media-body form_right">
@@ -84,3 +54,19 @@
             </div>
         </div>
     </a>
+<a href="{{url('sponsorship-opportunities')}}">
+    <div class="media contact-info form_right_div">
+        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
+        <div class="media-body form_right">
+            <h3>ABSTRACT SUBMISSION</h3>
+        </div>
+    </div>
+</a>
+<a href="{{url('sponsorship-opportunities')}}">
+    <div class="media contact-info form_right_div">
+        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
+        <div class="media-body form_right">
+            <h3>CONFERENCE SCHEDULE</h3>
+        </div>
+    </div>
+</a>
