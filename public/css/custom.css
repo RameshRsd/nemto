@@ -317,28 +317,35 @@ h2.Registration_h2{
      margin-bottom: 0;
      color: #2a2a2a;
  }
- .contact-info .media-body h3:hover {
-     padding-top: 5px;
-     font-size: 14px;
-     margin-left: 30px;
-     margin-bottom: 0;
-     color: #fff;
- }
- .contact-info__icon i, .contact-info__icon span {
-     color: transparent;
-     font-size: 20px;
- }
- .contact-info__icon {
-     margin-left: -35px;
-     margin-right: 19px;
- }
+ /*.contact-info .media-body h3:hover {*/
+     /*padding-top: 5px;*/
+     /*font-size: 14px;*/
+     /*margin-left: 30px;*/
+     /*margin-bottom: 0;*/
+     /*color: #fff;*/
+ /*}*/
+.media.contact-info.form_right_div:hover h3{
+    color: white;
+
+}
+.media.contact-info.form_right_div:hover i{
+    color: white;
+}
+.contact-info__icon i, .contact-info__icon span {
+     color: #06b6a9;
+    font-size: 20px;
+}
+
+
  section.contact-section.area-padding {
      margin-top: 84px;
  }
  .media-body.form_right h3 {
      font-family: sans-serif;
  }
-
+.contact-info__icon {
+    margin-right: 10px;
+}
 .container h2 {
     padding-top: 22px;
     margin: 10px 0;
