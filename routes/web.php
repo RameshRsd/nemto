@@ -94,13 +94,6 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::get('visitor-profile', 'VisitorsController@visitor_profile');
     Route::get('admission-policy', 'VisitorsController@admission_policy');
     /*======================Visitors============================*/
-
-//* ============================ Awards Controller ==================*//
-    Route::get('about-the-awards', 'AwardsController@about_the_awards');
-    Route::get('payment-fee-details', 'AwardsController@payment_fee_details');
-    Route::get('awards-contact-us', 'AwardsController@awards_contact_us');
-//* ============================ Awards Controller ==================*//
-
     //* ============================ Travel Desk Controller ==================*//
     Route::get('official-travel-partners', 'TravelDeskController@official_travel_partners');
     Route::get('travel-visa-information', 'TravelDeskController@travel_visa_information');

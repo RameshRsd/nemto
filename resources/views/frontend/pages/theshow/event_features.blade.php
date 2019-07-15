@@ -10,6 +10,7 @@
                     <div class="nemto_the_show">
                         <h1>Event Features</h1>
                             <ul>
+                                <li>Sign business collaboration, technology, partnership and investment agreements with international stakeholders to explore in Nepal.</li>
                             <li><strong>First ever International Summit on Medical Value Travel being</strong> organized in India for promoting services exports from India</li>
                             <li><strong>Exhibition</strong> with focus on Hospitals, Healthcare centers, AYUSH Hospitals, Educational institutions (Medical colleges, Nursing colleges &amp; AYUSH colleges), Medical devices and Electronics and associated infrastructure – medical tourism facilitators, Hotels, Airlines, Tour and travel companies and TPAs</li>
                             <li><strong>Present  and promote exclusive medical services and expertise</strong> </li>

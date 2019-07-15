@@ -8,67 +8,65 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="nemto_the_show">
-                        <h1>Venue Details</h1>
-                        <table width="100%" border="0" align="center" cellpadding="10" cellspacing="0" style="border:solid 1px #14afa9;">
+                        <h1>Package Details</h1>
+                        <table width="100%" border="2" align="center" cellpadding="10" cellspacing="0" style="border:solid 1px #14afa9;">
                             <tbody><tr>
-                                <td valign="middle" colspan="4" align="left" style="background-color:#14afa9;font-size:16px;padding-left:10px;height:35px;"><strong style="color:#fff;">Exhibition</strong></td>
+                                <td class="stand_and_packages" valign="middle" colspan="4" align="left"><strong style="color:#fff;">General</strong></td>
                             </tr>
                             <tr>
-                                <td valign="middle" style="height:35px;">
-                                    <div class="main_txt" style="text-align:justify;padding-left:10px;">Standard Booth</div>
+                                <td valign="middle">
+                                    <div class="main_txt">General Sponsor</div>
                                 </td>
-                                <td valign="middle" style="border-left: 1px solid #14afa9;padding-left:10px;height:35px;">
-                                    <div class="main_txt" style="text-align:justify;">9 Sq.M.</div>
+                                <td valign="middle">
+                                    <div class="main_txt">65000.00</div>
                                 </td>
-                                <td valign="middle" style="border-left: 1px solid #14afa9;padding-left:10px;height:35px;">
-                                    <div class="main_txt" style="text-align:justify;">INR 1,50,000/-</div>
-                                </td>
-                                <td valign="middle" style="border-left: 1px solid #14afa9;padding-left:10px;height:35px;">
-                                    <div class="main_txt" style="text-align:justify;">US$ 3000</div>
+                                <td valign="middle">
+                                    <div class="main_txt">US$ 590.00</div>
                                 </td>
                             </tr>
                             <tr>
-                                <td valign="middle" colspan="4" style="border-top: 1px solid #14afa9;padding-left:10px;height:35px;">
+                                <td valign="middle" colspan="4">
                                     <div class="main_txt" style="text-align:justify;">
-
-                                            <li>(Fascia Name, two chairs, one table, carpet, 3 spot lights, dustbin &amp; 15 amp socket)</li>
-                                            <li>Taxes as applicable</li>
-
+                                           <li>
+                                               Proper branding, 1 B2B Table, 2 Lunch & Dinner Coupon, Directory Listing
+                                           </li>
                                     </div>
                                 </td>
                             </tr>
-
                             </tbody>
                         </table>
                         <br>
-                        <table width="100%" border="0" align="center" cellpadding="10" cellspacing="0" style="border:solid 1px #006863;">
+                        <table width="100%" border="2" align="center" cellpadding="10" cellspacing="0" style="border:solid 1px #14afa9;">
                             <tbody><tr>
-                                <td valign="middle" colspan="3" align="left" style="background-color:#006863;font-size:16px;padding-left:10px;height:35px;"><strong style="color:#fff;">Conference</strong></td>
+                                <td class="stand_and_packages" valign="middle" colspan="4" align="left"><strong style="color:#fff;">Kit Bag</strong></td>
                             </tr>
                             <tr>
-                                <td valign="middle" style="height:35px;">
-                                    <div class="main_txt" style="text-align:justify;padding-left:10px;">Delegate Fee</div>
+                                <td valign="middle">
+                                    <div class="main_txt">Kit Bag</div>
                                 </td>
-                                <td valign="middle" style="border-left: 1px solid #006863;padding-left:10px;height:35px;">
-                                    <div class="main_txt" style="text-align:justify;">INR 10,000/- Per Person</div>
+                                <td valign="middle">
+                                    <div class="main_txt">600000.00</div>
                                 </td>
-                                <td valign="middle" style="border-left: 1px solid #006863;padding-left:10px;height:35px;">
-                                    <div class="main_txt" style="text-align:justify;">US$ 200</div>
+                                <td valign="middle">
+                                    <div class="main_txt">US$ 5500.00</div>
                                 </td>
                             </tr>
                             <tr>
-                                <td valign="middle" colspan="3" style="border-top: 1px solid #006863;padding-left:10px;height:35px;">
+                                <td valign="middle" colspan="4">
                                     <div class="main_txt" style="text-align:justify;">
-                                        <li>Taxes as applicable</li>
+                                        <li>
+                                            Proper branding, 1 B2B Table, 4 Lunch & Dinner Coupon, Directory Listing, Full Page inner side color Advt. in Souvenir
+                                        </li>
                                     </div>
                                 </td>
                             </tr>
-
                             </tbody>
                         </table>
+                        <br>
                         <br>
                         <div class="nemto_contact_us">
                             <h2>For more information please contact:</h2>
+                            <p><b> NEPAL MEDICAL TOURISM ORGANIZATION</b></p>
                             <p><b> Putalisadak, Kathmandu, Nepal</b></p>
                             <p><i class="fa fa-phone"></i> +977-1-4223473</p>
                             <p><i class="fa fa-mobile"></i> +977-9860555163, 9851206644,9860832126</p>

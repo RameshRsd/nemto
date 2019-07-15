@@ -441,6 +441,7 @@ a.venue_date img {
 
 
 .nemto_the_show ul li {
+    margin-left: 20px;
     color: #323232;
     line-height: 30px;
     font-size: 14px;
@@ -474,4 +475,23 @@ h3.photo_gallery {
 }
 .sponsore_nemto{
     padding-bottom: 20px;
+}
+p.sponsorship_left{
+    color: red;
+    float: left;
+}
+.sponsorship strong {
+    color: #01988d;
+}
+td.stand_and_packages {
+    background-color:#14afa9;
+    font-size:16px;
+    padding-left:10px;
+    height:35px;
+}
+.card-feature__subtitle {
+    line-height: 23px;
+    margin-bottom: 0;
+    color: #797979;
+    text-align: justify;
 }
