@@ -114,6 +114,17 @@
                     </ul>
                 </li>
 
+                <li class="treeview @if(request()->segment('2') =='visa-invitation' || request()->segment('2') =='view-visa-invitation') active open @endif">
+                    <a href="#"><i class="fa fa-file-pdf-o"></i> <span>Visa Invitation</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=" @if(request()->segment('2') =='visa-invitation') active @endif"><a href="{{url('admin/visa-invitation')}}"><i class="fa fa-eye"></i> View Invitation Details</a></li>
+                    </ul>
+                </li>
+
             </ul>
             <!-- /.sidebar-menu -->
         </section>

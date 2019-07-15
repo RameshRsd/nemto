@@ -37,7 +37,7 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">Diplomatic Official Registration Details</h3>
+                            <h3 class="box-title">Visa Invitation Request</h3>
                             {{--<h3 class="box-title pull-right"><a href="{{url('admin/create-events')}}" class="btn btn-primary btn-xs">Create New Event</a></h3>--}}
                         </div>
                         <!-- /.box-header -->
@@ -46,7 +46,8 @@
                                 <thead>
                                 <tr>
                                     <th>SN</th>
-                                    <th>Full Name</th>
+                                    <th>Company Name</th>
+                                    <th>Full Name (Passport)</th>
                                     <th>Address</th>
                                     <th>Mobile</th>
                                     <th>Email</th>
@@ -54,16 +55,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($diplomatics as $key=>$diplomatic)
+                                @foreach($invitations as $key=>$invitation)
                                     <tr>
                                         <td>{{++$key}}</td>
-                                        <td>{{$diplomatic->f_name}} {{$diplomatic->l_name}}</td>
-                                        <td>{{$diplomatic->district->name}}, {{$diplomatic->district->state->name}}, {{$diplomatic->district->state->country->name}}</td>
-                                        <td>{{$diplomatic->mobile}}</td>
-                                        <td>{{$diplomatic->email}}</td>
+                                        <td>{{$invitation->company_name}}</td>
+                                        <td>
+                                            {{$invitation->passport_name}}<br>
+                                            @if(isset($invitation->file))
+                                            <a href="{{url('public/uploads/passport').'/'.$invitation->file}}" target="_blank" class="fa fa-download btn btn-primary btn-xs"> Download Passport</a>
+                                                @else
+                                                <i style="color:Red; font-size: 12px;">Passport Not Uploaded</i>
+                                            @endif
+                                        </td>
+                                        <td>{{$invitation->country->name}}</td>
+                                        <td>{{$invitation->mobile_number}}</td>
+                                        <td>{{$invitation->email}}</td>
                                         <td>
                                             <div class="btn-group">
-                                                @if($diplomatic->status=='active')
+                                                @if($invitation->status=='active')
                                                     <small class="btn btn-success btn-xs">Approved</small>
                                                 @else
                                                     <small class="btn btn-warning btn-xs">Pending</small>
@@ -74,9 +83,9 @@
                                                     <span class="sr-only">Toggle Dropdown</span>
                                                 </button>
                                                 <ul class="dropdown-menu payment-status" role="menu">
-                                                    @if($diplomatic->status=='active')
+                                                    @if($invitation->status=='active')
                                                         <li>
-                                                            <form action="{{url('admin/diplomatic-official/update_status').'/'.$diplomatic->id}}" method="post">
+                                                            <form action="{{url('admin/visa-invitation/update_status').'/'.$invitation->id}}" method="post">
                                                                 {{csrf_field()}}
                                                                 <input type="hidden" name="status" value="inactive">
                                                                 <button type="submit" class="btn btn-danger btn-xs">Reject</button>
@@ -84,7 +93,7 @@
                                                         </li>
                                                     @else
                                                         <li>
-                                                            <form action="{{url('admin/diplomatic-official/update_status').'/'.$diplomatic->id}}" method="post">
+                                                            <form action="{{url('admin/visa-invitation/update_status').'/'.$invitation->id}}" method="post">
                                                                 {{csrf_field()}}
                                                                 <input type="hidden" name="status" value="active">
                                                                 <button type="submit" class="btn btn-success btn-xs">Approve</button>

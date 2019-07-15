@@ -13,4 +13,16 @@ class DiplomaticController extends Controller
         $diplomatics = Diplomatic::orderBy('id','DESC')->get();
         return view('backend.admin.diplomatic.index',compact('title','diplomatics'));
     }
+    public function update_status(Request $request, $id)
+    {
+        $diplomatic = Diplomatic::findOrFail($id);
+        $diplomatic->status = $request->status;
+        $diplomatic->save();
+//        if ($exhibition->status=='active'){
+//
+//        }
+        return redirect('admin/diplomatic-official')->with('success', 'Status Changed Successfully !!');
+
+    }
+
 }

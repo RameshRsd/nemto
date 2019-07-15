@@ -249,7 +249,7 @@ class RegistrationController extends Controller
             $abstract->photo =$filename;
         }
         $abstract->save();
-        return redirect()->back()->with('success','Thank you for Substract Submission !!');
+        return redirect()->back()->with('success','Thank you for Abstract Submission !!');
     }
 
     public function get_b2b_meetings(){
