@@ -72,6 +72,7 @@ Route::group(['namespace'=>'frontend'],function(){
     Route::get('exhibitor-profile', 'ExhibitionController@exhibitor_profile');
     Route::get('layout-plan', 'ExhibitionController@layout_plan');
     Route::get('visa-invitation-letter', 'ExhibitionController@visa_invitation_letter');
+    Route::post('visa-invitation-letter', 'ExhibitionController@post_visa_invitation_letter');
     Route::get('venue-details', 'ExhibitionController@venue_details');
     Route::get('stand-and-packages', 'ExhibitionController@stand_and_packages');
     Route::get('sponsorship-opportunities', 'ExhibitionController@sponsorship_opportunities');
@@ -132,22 +133,32 @@ Route::group(['namespace'=>'backend'],function(){
 
         /*======================================= Delegate ================================= */
         Route::get('delegates','DelegateController@index');
+        Route::post('delegates/update_status/{id}','DelegateController@update_status');
         /*======================================= Delegate ================================= */
 
         /*======================================= Foreign Delegate ================================= */
         Route::get('foreign-delegates','ForeignDelegateController@index');
+        Route::post('foreign-delegates/update_status/{id}','ForeignDelegateController@update_status');
         /*======================================= Foreign Delegate ================================= */
 
         /*======================================= diplomatic-official ================================= */
         Route::get('diplomatic-official','DiplomaticController@index');
+        Route::post('diplomatic-official/update_status/{id}','DiplomaticController@update_status');
         /*======================================= diplomatic-official ================================= */
 
         /*======================================= abstract-submission ================================= */
         Route::get('abstract-submission','AbstractController@index');
+        Route::post('abstract-submission/update_status/{id}','AbstractController@update_status');
         /*======================================= abstract-submission ================================= */
 
         /*======================================= b2b-meetings ================================= */
         Route::get('b2b-meetings','BusinessController@index');
+        Route::post('b2b-meetings/update_status/{id}','BusinessController@update_status');
+        /*======================================= b2b-meetings ================================= */
+
+        /*======================================= b2b-meetings ================================= */
+        Route::get('visa-invitation','VisaController@index');
+        Route::post('visa-invitation/update_status/{id}','VisaController@update_status');
         /*======================================= b2b-meetings ================================= */
     });
     /* ================================================ Admin CONTROL Start============================================================== */

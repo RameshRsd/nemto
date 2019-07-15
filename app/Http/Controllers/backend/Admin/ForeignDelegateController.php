@@ -13,4 +13,16 @@ class ForeignDelegateController extends Controller
         $foreign_delegates = ForeignDelegate::orderBy('id','DESC')->get();
         return view('backend.admin.foreign-delegate.index',compact('title','foreign_delegates'));
     }
+    public function update_status(Request $request, $id)
+    {
+        $delegate = ForeignDelegate::findOrFail($id);
+        $delegate->status = $request->status;
+        $delegate->save();
+//        if ($exhibition->status=='active'){
+//
+//        }
+        return redirect('admin/foreign-delegates')->with('success', 'Status Changed Successfully !!');
+
+    }
+
 }
