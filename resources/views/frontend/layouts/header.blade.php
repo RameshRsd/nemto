@@ -37,6 +37,12 @@
                     <li><a href="https://www.facebook.com/nepalmedicaltourismorganization/" target="_blank"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    @if(\Illuminate\Support\Facades\Auth::check())
+                        <li> | <a href="{{url('login')}}"> <i class="fa fa-briefcase"></i> Dashboard</a></li>
+                        <li><a href="{{url('logout')}}"><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+                    @else
+                        <li> | <a href="{{url('login')}}"><i class="fa fa-sign-in-alt"></i> Login</a></li>
+                    @endif
                 </ul>
                 <ul class="list header_social">
                     <li><a href="{{url('')}}">HOME</a></li>
@@ -139,7 +145,7 @@
                                 <li class="nav-item"><a class="nav-link" href="{{url('conference-delegate-registration')}}">Conference Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('foreign-delegate-registration')}}">Foreign Delegate Registration</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('diplomatic-official-registration')}}">Diplomatic Official Registration</a></li>
-\                                <li class="nav-item"><a class="nav-link" href="{{url('b2b-meetings')}}">B2B Meetings</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('b2b-meetings')}}">B2B Meetings</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('abstract-submission')}}">Abstract Submission</a></li>
                             </ul>
                         </li>
@@ -155,17 +161,6 @@
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="{{url('foreign-delegate-highlights')}}"> Highlights</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{url('delegate-registration')}}">Delegate Registration</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Account <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                @if(\Illuminate\Support\Facades\Auth::check())
-                                <li class="nav-item"><a class="nav-link" href="{{url('login')}}"><i class="fa fa-briefcase"></i> Dashboard</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{url('logout')}}"><i class="fa fa-sign-out-alt"></i> Logout</a></li>
-                                @else
-                                <li class="nav-item"><a class="nav-link" href="{{url('login')}}"><i class="fa fa-sign-in-alt"></i> Login</a></li>
-                                    @endif
                             </ul>
                         </li>
                     </ul>
